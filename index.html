@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MYANTRA HACKERRAMP</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: #000000;
+        font-family: Geneva, sans-serif;
+      }
+      p {
+        margin: 0;
+        padding: 0;
+      }
+      a {
+        color: #3CB371;
+      }
+      #viewer {
+        width: 100%; 
+        height: 400px; 
+        margin: auto; 
+        background: #000000;
+        margin-top: 2em;
+      }
+      .button {
+        border-radius: 0.2em;
+        background-color: black;
+        color: #3CB371;
+        border: 3px solid #3CB371;
+        font-weight: bold;
+        padding: 1em;
+        cursor: pointer;
+      }
+      .center {
+        text-align: center;
+        margin-top: 2em;
+      }
+      canvas {
+        display: block;
+      }
+      pre {
+        padding: 1em;
+        max-width: 900px;
+        margin: auto;
+        margin-top: 4em;
+        font-size: 1.2em;
+      }
+      .footer {
+        padding-bottom: 2em;
+      }
+	</style>
+    <link 
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/themes/prism.min.css"
+    />
+  </head>
+
+  <body>
+  <div class="content">
+
+    <header class="center">
+      <h1 style="color:white">SMART MATCH</h1></header>
+
+    <!-- button start -->
+    <div class="center">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+      <script type="text/javascript">
+      $(function(){
+          $('#sample-1-button').click(function(){ 
+              if(!$('#iframe').length) {
+                      $('#iframeHolder-1').html('<iframe allowfullscreen webkitallowfullscreen width="640" height="480" frameborder="0" seamless src="https://p3d.in/e/ZLbp9"></iframe>');
+              }
+          });   
+      });
+
+      </script>
+      <button class="button" button id="sample-1-button">SAMPLE 1</button>
+      <div id="iframeHolder-1"></div>
+      <!-- button end -->
+      
+      <!-- button 2 start -->
+      <script type="text/javascript">
+        $(function(){
+            $('#sample-2-button').click(function(){ 
+                if(!$('#iframe').length) {
+                        $('#iframeHolder-2').html('<iframe allowfullscreen webkitallowfullscreen width="640" height="480" frameborder="0" seamless src="https://p3d.in/e/fd0hx"></iframe>');
+                }
+            });   
+        });
+        </script>
+        
+        <!-- <button class="button" button id="sample-1-button">SAMPLE 2</button> -->
+        <div id="iframeHolder-2"></div>        
+        <!-- button 2 end -->
+        <!-- button 3 start -->   
+     <script type="text/javascript">
+        $(function(){
+            $('#sample-3-button').click(function(){ 
+                if(!$('#iframe').length) {
+                        $('#iframeHolder-3').html('<iframe allowfullscreen webkitallowfullscreen width="640" height="480" frameborder="0" seamless src="https://p3d.in/e/5vhhQ"></iframe>');
+                }
+            });   
+        });
+        </script>
+        <button class="button" button id="sample-3-button">SAMPLE 2</button>
+        <div id="iframeHolder-3"></div>       
+        <!-- button 3 end -->
+        <button class="button" id="sample-2-button">
+          SAMPLE 3
+        </button> 
+ 
+    </div>
+    <!-- </div> -->
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-javascript.js"></script>
+</body>
+</html>
