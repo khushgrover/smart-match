@@ -6,11 +6,7 @@
 
 **Members**: Piyush Aggarwal, Kartikey Tiwari, Khushnuma Grover
 
-Thapar Institute of Engineering and Technology
-
-We show how a MGN network can be fine-tuned on new images. The network will produce 3d-garments of person and the 3d-body parameters. These 3d-body parameters can be layered on top of SMPL body.
-
-We show how these 3d-garments can be used to mix and match clothing on a model. This can be rendered a website in real-time using **three.js**. For demo purposes we have used https://p3d.in.
+**University**: Thapar Institute of Engineering and Technology
 
 ### The demo site has been published to : https://khushgrover.github.io/smart-match/
 
@@ -22,6 +18,10 @@ This repository is implemented using:
 - CUDNN 7
 
 ## **Phase 2 Explaination to approach taken:**
+
+We show how a MGN network can be fine-tuned on new images. The network will produce 3d-garments of person and the 3d-body parameters. These 3d-body parameters can be layered on top of SMPL body.
+
+We show how these 3d-garments can be used to mix and match clothing on a model. This can be rendered a website in real-time using **three.js**. For demo purposes we have used https://p3d.in.
 
 ### VIDEO EXPLAINATION
 
@@ -38,6 +38,8 @@ https://drive.google.com/file/d/1eqPVxptgWA76aZt2NUSrmHBpPWXXzEDi/view
 ### DEMO-2 (WEB SITE)
 
 https://drive.google.com/file/d/1juuHeB4G0OUVO6JLMe8celSGWUG561fk/view
+
+## Colab notebooks
 
 The local changes have also been shown on Colab Notebooks: (Colab doesn't have a display so we could not display out the resulta and have used SSH and ngrok int local machine for visualization.)
 
