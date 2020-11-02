@@ -53,6 +53,8 @@ The local changes have also been shown on Colab Notebooks: (Colab doesn't have a
 
 **Extracting dresses using GrabCut**: https://github.com/khushgrover/smart-match/blob/main/OpenCv_GrabCut.ipynb
 
+**OpenPose**: https://github.com/khushgrover/smart-match/blob/main/Openpose1_6_0.ipynb
+
 ## **References**
 
 ### **MultiGarmentNetwork**
