@@ -3,8 +3,10 @@
 ## **Myntra HackerRamp Submission Phase 2**
 
 **Team**: The Chibi Team
+
 **Members**: Piyush Aggarwal, Kartikey Tiwari, Khushnuma Grover
-Thapar University
+
+Thapar Institute of Engineering and Technology
 
 We show how a MGN network can be fine-tuned on new images. The network will produce 3d-garments of person and the 3d-body parameters. These 3d-body parameters can be layered on top of SMPL body.
 
