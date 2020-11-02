@@ -2,9 +2,15 @@
 
 ## **Myntra HackerRamp Submission Phase 2**
 
-Team Members
+**Team**: The Chibi Team
+**Members**: Piyush Aggarwal, Kartikey Tiwari, Khushnuma Grover
+Thapar University
 
-We show how a MGN network can be fine-tuned on new images. The network will produce 3d-garments of person and the 3d-body parameters. These 3d-body parameters can be layered on top of SMPL body. We show how these 3d-garments can be used to mix and match clothing on a model. This can be rendered a website in real-time using **three.js**. For demo purposes we have used https://p3d.in.
+We show how a MGN network can be fine-tuned on new images. The network will produce 3d-garments of person and the 3d-body parameters. These 3d-body parameters can be layered on top of SMPL body.
+
+We show how these 3d-garments can be used to mix and match clothing on a model. This can be rendered a website in real-time using **three.js**. For demo purposes we have used https://p3d.in.
+
+### The demo site has been published to : https://khushgrover.github.io/smart-match/
 
 This repository is implemented using:
 
@@ -12,8 +18,6 @@ This repository is implemented using:
 - Python 3.6.9
 - CUDA 10.1
 - CUDNN 7
-
-### The demo site has been published to : https://khushgrover.github.io/smart-match/
 
 ## **Phase 2 Explaination to approach taken:**
 
@@ -32,6 +36,18 @@ https://drive.google.com/file/d/1eqPVxptgWA76aZt2NUSrmHBpPWXXzEDi/view
 ### DEMO-2 (WEB SITE)
 
 https://drive.google.com/file/d/1juuHeB4G0OUVO6JLMe8celSGWUG561fk/view
+
+The local changes have also been shown on Colab Notebooks: (Colab doesn't have a display so we could not display out the resulta and have used SSH and ngrok int local machine for visualization.)
+
+**MGN**: https://github.com/khushgrover/smart-match/blob/main/MultiGarmentNetwork.ipynb
+
+**PGN Segmentation**: https://github.com/khushgrover/smart-match/blob/main/pgn_segmentation.ipynb
+
+**Training U-NET**: https://github.com/khushgrover/smart-match/blob/main/Train_UNET.ipynb
+
+**Extracting dresses using U-NET**: https://github.com/khushgrover/smart-match/blob/main/Train_UNET.ipynb
+
+**Extracting dresses using GrabCut**: https://github.com/khushgrover/smart-match/blob/main/OpenCv_GrabCut.ipynb
 
 ## **References**
 
