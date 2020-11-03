@@ -1,8 +1,15 @@
-# Smart Match
+<p align="center"><img width=12.5% src="assets\Logo.png"></p>
+<p align="center"><img width=70% src="assets\smart-match.png"></p>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+![Python](https://img.shields.io/badge/PYTHON-v3.6.9-blue.svg)
+![CUDA](https://img.shields.io/badge/CUDA-10.1-black)
+![CUDNN](https://img.shields.io/badge/CUDNN-7.0-orange)
+![TENSORFLOW](https://img.shields.io/badge/Tensorflow-2.1.0-green)
 
 ## **Myntra HackerRamp Submission Phase 2**
 
-**Team**: The Chibi Team
+**Team**: TheChibiTeam
 
 **Members**: Piyush Aggarwal, Kartikey Tiwari, Khushnuma Grover
 
