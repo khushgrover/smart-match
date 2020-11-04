@@ -20,13 +20,6 @@
 
 ### The demo site has been published to : https://khushgrover.github.io/smart-match/
 
-This repository is implemented using:
-
-- Tensorflow 2.1.0
-- Python 3.6.9
-- CUDA 10.1
-- CUDNN 7
-
 ## **Phase 2 Explaination to approach taken:**
 
 We show how a MGN network can be fine-tuned on new images. The network will produce 3d-garments of person and the 3d-body parameters. These 3d-body parameters can be layered on top of SMPL body.
