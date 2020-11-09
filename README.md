@@ -1,11 +1,14 @@
 <p align="center"><img width=30% src="assets\Logo.png"></p>
 <p align="center"><img width=70% src="assets\smart-match.png"></p>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<div align="center">
+
 ![Python](https://img.shields.io/badge/PYTHON-v3.6.9-blue.svg)
 ![CUDA](https://img.shields.io/badge/CUDA-10.1-black)
 ![CUDNN](https://img.shields.io/badge/CUDNN-7.0-orange)
 ![TENSORFLOW](https://img.shields.io/badge/Tensorflow-2.1.0-green)
+
+</div>
 
 ## **Myntra HackerRamp Submission Phase 2**
 
@@ -16,13 +19,6 @@
 **University**: Thapar Institute of Engineering and Technology
 
 ### The demo site has been published to : https://khushgrover.github.io/smart-match/
-
-This repository is implemented using:
-
-- Tensorflow 2.1.0
-- Python 3.6.9
-- CUDA 10.1
-- CUDNN 7
 
 ## **Phase 2 Explaination to approach taken:**
 
@@ -60,7 +56,7 @@ The local changes have also been shown on Colab Notebooks: (Colab doesn't have a
 
 **Extracting dresses using GrabCut**: https://github.com/khushgrover/smart-match/blob/main/OpenCv_GrabCut.ipynb
 
-**OpenPose**: https://github.com/khushgrover/smart-match/blob/main/Openpose1_6_0.ipynb
+**Extracting Keypoints of body OpenPose**: https://github.com/khushgrover/smart-match/blob/main/Openpose1_6_0.ipynb
 
 ## **References**
 
@@ -85,5 +81,8 @@ _Preprocessing for Inputs_
 - Run **OpenPose** body_25 for 2D joints. https://github.com/CMU-Perceptual-Computing-Lab/openpose
 
 ### **SMPL: A Skinned Multi-Person Linear Model**
+
+SMPL is a function M that maps pose θ and shape β
+to a mesh of V = 6890 vertices.
 
 Downloaded the neutral SMPL model from http://smplify.is.tue.mpg.de/
