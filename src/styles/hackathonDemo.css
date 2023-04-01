@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    font-family: Geneva, sans-serif;
+}
+
+.button {
+    border-radius: 0.2em;
+    background-color: #000;
+    color: #3CB371;
+    border: 3px solid #3CB371;
+    font-weight: bold;
+    padding: 1em;
+    cursor: pointer;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+#sample-1-button {
+    margin-left: auto;
+}
+
+.center {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.content {
+    margin: auto;
+    max-width: 900px;
+}
+
+h1 {
+    color: #fff;
+}
+
+p, a {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #3CB371;
+}
+
+#viewer {
+    width: 100%;
+    height: 400px;
+    background: #000;
+    margin: 2em auto auto;
+}
+
+canvas {
+    display: block;
+}
+
+pre {
+    padding: 1em;
+    max-width: 900px;
+    margin: 4em auto auto;
+    font-size: 1.2em;
+}
+
+.footer {
+    padding-bottom: 2em;
+}
