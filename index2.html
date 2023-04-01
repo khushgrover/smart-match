@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="src/assets/myntraLogo.svg" />
+    <title>Myntra Hackerrank Demo</title>
+    <link rel="stylesheet" href="src/styles/myntraDetailPage.css">
+</head>
+<body>
+<header class="sticky-header">
+    <img src="https://cdn.freelogovectors.net/wp-content/uploads/2021/02/myntra-logo-freelogovectors.net_.png" alt="">
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div class="product-container">
+        <div class="product-image">
+            <img src="https://via.placeholder.com/500x500" alt="Product Image">
+            <img src="https://via.placeholder.com/500x500" alt="Product Image">
+            <img src="https://via.placeholder.com/500x500" alt="Product Image">
+            <img src="https://via.placeholder.com/500x500" alt="Product Image">
+        </div>
+        <div class="product-detail">
+            <h2>Product Title</h2>
+            <p class="product-price">Rs. 999</p>
+            <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+            <form>
+                <label for="size">Size:</label>
+                <select id="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+                <div class="quantity-container">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="5">
+                </div>
+                <div class="button-container">
+                    <button type="submit">Add to Cart</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2023 Made with <span class="heart">&hearts;</span> by TheChibiTeam</p>
+</footer>
+
+<script src="src/scripts/myntraDetailPage.js"></script>
+</body>
+</html>
