@@ -1,5 +1,5 @@
-<p align="center"><img width=30% src="assets\Logo.png"></p>
-<p align="center"><img width=70% src="assets\smart-match.png"></p>
+<p align="center"><img width=30% src="src\assets\Logo.png" alt=""></p>
+<p align="center"><img width=70% src="src\assets\smart-match.png" alt=""></p>
 
 <div align="center">
 
