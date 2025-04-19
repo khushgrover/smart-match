@@ -1,120 +1,163 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>MYANTRA HACKERRAMP</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="src/assets/myntraLogo.svg" />
+    <title>Myntra Hackerrank Demo</title>
+    <link rel="stylesheet" href="src/styles/myntraDetailPage.css">
     <style>
-      body {
-        margin: 0;
-        padding: 0;
-        background: #000000;
-        font-family: Geneva, sans-serif;
+      .smart-match-section {
+        padding: 20px;
+        background: #fff;
+        border: 1px solid #eee;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        width: 100%;
+        max-width: 680px;
       }
-      p {
-        margin: 0;
-        padding: 0;
-      }
-      a {
-        color: #3CB371;
-      }
-      #viewer {
-        width: 100%; 
-        height: 400px; 
-        margin: auto; 
-        background: #000000;
-        margin-top: 2em;
-      }
-      .button {
-        border-radius: 0.2em;
-        background-color: black;
-        color: #3CB371;
-        border: 3px solid #3CB371;
-        font-weight: bold;
-        padding: 1em;
-        cursor: pointer;
-      }
-      .center {
-        text-align: center;
-        margin-top: 2em;
-      }
-      canvas {
-        display: block;
-      }
-      pre {
-        padding: 1em;
-        max-width: 900px;
-        margin: auto;
-        margin-top: 4em;
-        font-size: 1.2em;
-      }
-      .footer {
-        padding-bottom: 2em;
-      }
-	</style>
-    <link 
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/themes/prism.min.css"
-    />
-  </head>
-
-  <body>
-  <div class="content">
-
-    <header class="center">
-      <h1 style="color:white">SMART MATCH</h1></header>
-
-    <!-- button start -->
-    <div class="center">
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
-      <script type="text/javascript">
-      $(function(){
-          $('#sample-1-button').click(function(){ 
-              if(!$('#iframe').length) {
-                      $('#iframeHolder-1').html('<iframe allowfullscreen webkitallowfullscreen width="640" height="480" frameborder="0" seamless src="https://p3d.in/e/ZLbp9"></iframe>');
-              }
-          });   
-      });
-
-      </script>
-      <button class="button" button id="sample-1-button">SAMPLE 1</button>
-      <div id="iframeHolder-1"></div>
-      <!-- button end -->
       
-      <!-- button 2 start -->
-      <script type="text/javascript">
-        $(function(){
-            $('#sample-2-button').click(function(){ 
-                if(!$('#iframe').length) {
-                        $('#iframeHolder-2').html('<iframe allowfullscreen webkitallowfullscreen width="640" height="480" frameborder="0" seamless src="https://p3d.in/e/fd0hx"></iframe>');
-                }
-            });   
-        });
-        </script>
+      .smart-match-button {
+        background: #ff3e6c;
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        border-radius: 4px;
+        font-weight: bold;
+        cursor: pointer;
+        margin: 5px;
+        transition: background 0.2s;
+      }
+      
+      .smart-match-button:hover {
+        background: #ff527b;
+      }
+      
+      .smart-match-buttons {
+        margin-bottom: 20px;
+      }
+      
+      #iframeHolder-1, #iframeHolder-2, #iframeHolder-3 {
+        margin: 20px 0;
+        text-align: center;
+      }
+      
+      #iframeHolder-1 iframe, #iframeHolder-2 iframe, #iframeHolder-3 iframe {
+        max-width: 100%;
+        height: auto;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      }
+      
+      .product-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      }
+      
+      .product-container {
+        padding: 20px;
+        gap: 30px;
+      }
+      
+      .product-content {
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      }
+      
+      @media (max-width: 1200px) {
+        .product-container {
+          flex-direction: column;
+          align-items: center;
+        }
         
-        <!-- <button class="button" button id="sample-1-button">SAMPLE 2</button> -->
-        <div id="iframeHolder-2"></div>        
-        <!-- button 2 end -->
-        <!-- button 3 start -->   
-     <script type="text/javascript">
-        $(function(){
-            $('#sample-3-button').click(function(){ 
-                if(!$('#iframe').length) {
-                        $('#iframeHolder-3').html('<iframe allowfullscreen webkitallowfullscreen width="640" height="480" frameborder="0" seamless src="https://p3d.in/e/5vhhQ"></iframe>');
-                }
-            });   
-        });
-        </script>
-        <button class="button" button id="sample-3-button">SAMPLE 2</button>
-        <div id="iframeHolder-3"></div>       
-        <!-- button 3 end -->
-        <button class="button" id="sample-2-button">
-          SAMPLE 3
-        </button> 
- 
+        .smart-match-section {
+          margin-bottom: 30px;
+        }
+      }
+    </style>
+</head>
+<body>
+<header class="sticky-header">
+    <img src="https://cdn.freelogovectors.net/wp-content/uploads/2021/02/myntra-logo-freelogovectors.net_.png" alt="">
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div class="product-container">
+        <!-- Smart Match Section -->
+        <div class="smart-match-section">
+            <h2 class="smart-match-title">SMART MATCH</h2>
+            <div class="smart-match-buttons">
+                <button class="smart-match-button" id="sample-1-button">SAMPLE 1</button>
+                <button class="smart-match-button" id="sample-2-button">SAMPLE 2</button>
+                <button class="smart-match-button" id="sample-3-button">SAMPLE 3</button>
+            </div>
+            <div id="iframeHolder-1"></div>
+            <div id="iframeHolder-2"></div>
+            <div id="iframeHolder-3"></div>
+        </div>
+
+        <!-- Product Content Section -->
+        <div class="product-content">
+            <div class="product-detail">
+                <h1>Nike</h1>
+                <div class="product-price">₹6,999</div>
+                <p class="product-description">Men Regular Fit Cotton Shirt with Smart Match Technology</p>
+                <div class="form-group">
+                    <label for="size">Select Size</label>
+                    <select id="size">
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                    </select>
+                </div>
+                <div class="button-container">
+                    <button>ADD TO BAG</button>
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- </div> -->
-  </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-javascript.js"></script>
+</main>
+
+<footer>
+    <p>&copy; 2023 Made with <span class="heart">&hearts;</span> by TheChibiTeam</p>
+</footer>
+
+<!-- Add jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+
+<!-- Button click handlers -->
+<script type="text/javascript">
+    $(function(){
+        $('#sample-1-button').click(function(){ 
+            if(!$('#iframe').length) {
+                $('#iframeHolder-1').html('<iframe allowfullscreen webkitallowfullscreen width="640" height="480" frameborder="0" seamless src="https://p3d.in/e/ZLbp9"></iframe>');
+            }
+        });   
+
+        $('#sample-2-button').click(function(){ 
+            if(!$('#iframe').length) {
+                $('#iframeHolder-2').html('<iframe allowfullscreen webkitallowfullscreen width="640" height="480" frameborder="0" seamless src="https://p3d.in/e/fd0hx"></iframe>');
+            }
+        });   
+
+        $('#sample-3-button').click(function(){ 
+            if(!$('#iframe').length) {
+                $('#iframeHolder-3').html('<iframe allowfullscreen webkitallowfullscreen width="640" height="480" frameborder="0" seamless src="https://p3d.in/e/5vhhQ"></iframe>');
+            }
+        });   
+    });
+</script>
+
 </body>
 </html>
