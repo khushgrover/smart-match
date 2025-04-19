@@ -6,19 +6,75 @@
     <title>Myntra Hackerrank Demo</title>
     <link rel="stylesheet" href="src/styles/myntraDetailPage.css">
     <style>
-      .button {
-        border-radius: 0.2em;
-        background-color: black;
-        color: #3CB371;
-        border: 3px solid #3CB371;
-        font-weight: bold;
-        padding: 1em;
-        cursor: pointer;
-        margin: 10px;
+      .smart-match-section {
+        padding: 20px;
+        background: #fff;
+        border: 1px solid #eee;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        width: 100%;
+        max-width: 680px;
       }
-      .center {
+      
+      .smart-match-button {
+        background: #ff3e6c;
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        border-radius: 4px;
+        font-weight: bold;
+        cursor: pointer;
+        margin: 5px;
+        transition: background 0.2s;
+      }
+      
+      .smart-match-button:hover {
+        background: #ff527b;
+      }
+      
+      .smart-match-buttons {
+        margin-bottom: 20px;
+      }
+      
+      #iframeHolder-1, #iframeHolder-2, #iframeHolder-3 {
+        margin: 20px 0;
         text-align: center;
-        margin-top: 2em;
+      }
+      
+      #iframeHolder-1 iframe, #iframeHolder-2 iframe, #iframeHolder-3 iframe {
+        max-width: 100%;
+        height: auto;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      }
+      
+      .product-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      }
+      
+      .product-container {
+        padding: 20px;
+        gap: 30px;
+      }
+      
+      .product-content {
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      }
+      
+      @media (max-width: 1200px) {
+        .product-container {
+          flex-direction: column;
+          align-items: center;
+        }
+        
+        .smart-match-section {
+          margin-bottom: 30px;
+        }
       }
     </style>
 </head>
@@ -36,20 +92,40 @@
 </header>
 
 <main>
-    <div class="center">
-        <h1>SMART MATCH</h1>
-        
-        <!-- Sample 1 Button -->
-        <button class="button" id="sample-1-button">SAMPLE 1</button>
-        <div id="iframeHolder-1"></div>
+    <div class="product-container">
+        <!-- Smart Match Section -->
+        <div class="smart-match-section">
+            <h2 class="smart-match-title">SMART MATCH</h2>
+            <div class="smart-match-buttons">
+                <button class="smart-match-button" id="sample-1-button">SAMPLE 1</button>
+                <button class="smart-match-button" id="sample-2-button">SAMPLE 2</button>
+                <button class="smart-match-button" id="sample-3-button">SAMPLE 3</button>
+            </div>
+            <div id="iframeHolder-1"></div>
+            <div id="iframeHolder-2"></div>
+            <div id="iframeHolder-3"></div>
+        </div>
 
-        <!-- Sample 2 Button -->
-        <button class="button" id="sample-2-button">SAMPLE 2</button>
-        <div id="iframeHolder-2"></div>
-
-        <!-- Sample 3 Button -->
-        <button class="button" id="sample-3-button">SAMPLE 3</button>
-        <div id="iframeHolder-3"></div>
+        <!-- Product Content Section -->
+        <div class="product-content">
+            <div class="product-detail">
+                <h1>Nike</h1>
+                <div class="product-price">₹6,999</div>
+                <p class="product-description">Men Regular Fit Cotton Shirt with Smart Match Technology</p>
+                <div class="form-group">
+                    <label for="size">Select Size</label>
+                    <select id="size">
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                    </select>
+                </div>
+                <div class="button-container">
+                    <button>ADD TO BAG</button>
+                </div>
+            </div>
+        </div>
     </div>
 </main>
 
